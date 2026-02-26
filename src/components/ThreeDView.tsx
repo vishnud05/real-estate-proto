@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, X, Maximize2 } from 'lucide-react';
+import apartmentInside3Img from '../../assets/apartment-inside3.jpg';
 
 export const ThreeDView = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -44,7 +45,7 @@ export const ThreeDView = () => {
               <div className="absolute -inset-1 border border-luxury-mustard/30 rounded-[32px] md:rounded-[48px]" />
               <div className="relative aspect-[16/10] rounded-[28px] md:rounded-[44px] overflow-hidden shadow-2xl">
                 <img
-                  src="assets/apartment-inside3.jpg"
+                  src={apartmentInside3Img}
                   alt="3D Architectural View"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -111,7 +112,7 @@ export const ThreeDView = () => {
               className="relative w-full max-w-6xl aspect-video rounded-3xl overflow-hidden shadow-2xl"
             >
               <img
-                src="assets/apartment-inside3.jpg"
+                src={apartmentInside3Img}
                 alt="3D Interior View"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
